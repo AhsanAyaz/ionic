@@ -1,4 +1,4 @@
-import { whatever } from '@ionic/core';
+import { defineCustomElements } from '@ionic/core';
 import { IonicWindow } from './types/interfaces';
 
 
@@ -31,6 +31,6 @@ export function setupIonic() {
       }
     };
 
-    customElementsDefineAll(win, { namespace: 'Ionic' });
+    defineCustomElements(win);
   };
 }
